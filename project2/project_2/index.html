@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title>project 2</title>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="common/css/normalize.css">
+    <link rel="stylesheet" href="common/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="common/css/mobile.css">
+    <link rel="stylesheet" media="(min-width: 1280px)"  href="common/css/pc.css">
+
+  <script src="common/js/prefixfree.min.js"></script>
+  <script src="common/js/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+  <header>
+
+    <section class="mobile_header">
+      <img src="images/mobile_mainlogo.png" alt="logo" class="headerlogo" >
+      <div class="header_menu">
+          <img src="images/search_w.png" alt="11" class="menu1">
+          <img src="images/menu.png" alt="22" class="menu menu2" id="menu_open">
+      </div>
+    </section>
+    <section class="pc_header">
+        <img src="images/mainlogo.png" alt="logo" class="headerlogo">
+        <div class="pc_menu">
+            <div class="dropdown">
+                <div class="dropbtn">회사소개</div>
+                <div class="dropdown-content">
+                    <a href="#">회사소개</a>
+                    <a href="#">연혁</a>
+                    <a href="#">CI소개</a>
+                    <a href="#">위치안내</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">무역사업</div>
+                <div class="dropdown-content">
+                    <a href="#">소개</a>
+                    <a href="#">기능 재료 사업</a>
+                    <a href="#">뷰티사이언스 사업</a>
+                    <a href="#">의약원료 사업</a>
+                    <a href="#">식품원료 사업</a>
+                    <a href="#">화상광학 사업</a>
+                    <a href="#">농산물 원료 사업</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">제약사업</div>
+                <div class="dropdown-content">
+                    <a href="#">소개</a>
+                    <a href="#">CDMO사업</a>
+                    <a href="#">천연물 사업</a>
+                    <a href="#">완제의약품 사업</a>
+                    <a href="#">기능성 식품 사업</a>
+                    <a href="#">연구개발</a>
+                    <a href="#">제품소식</a>
+                    <a href="#">의약품 제품검색</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">뉴스룸</div>
+                <div class="dropdown-content">
+                    <a href="#">새소식</a>
+                    <a href="#">보도자료</a>
+                    <a href="#">WEBZINE</a>
+                    <a href="#">사회공헌</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">채용</div>
+                <div class="dropdown-content">
+                    <a href="#">채용안내</a>
+                    <a href="#">채용 FAQ</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">문의</div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a href="#"><img src="images/search_b.png" alt="search"></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a href="#"><img src="images/global.png" alt="global"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="mibile_nav">
+        <div class="nav_wrapper">
+            <div class="menu" id="menu_close">close</div>
+            <span><a href="#">Ko</a><a href="#" class="english">En</a></span>
+            
+            <ul id="gnb">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">무역사업</a></li>
+                <li><a href="#">제약사업</a></li>
+                <li><a href="#">뉴스룸</a></li>
+                <li><a href="#">채용</a></li>
+                <li><a href="#">문의</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+  </header>
+
+  <main>
+      <div class="mainVideo">
+        <video autoplay muted loop class="main_video">
+            <source src="images/mainVideo.mp4" type="video/mp4">
+        </video>
+      </div>
+    
+    <section class="main_sec">
+        <div>
+            <h2>풍림무약은<br>새롭게 나아갑니다</h2>
+            <div class="pc_num">
+                <a href="#"><img src="images/left.png" alt="l"></a><span class="black">01</span> / <span>03</span><a href="#"><img src="images/right.png" alt="r"></a>
+            </div>
+        </div>
+        <div class="main_container">
+            <div>
+                <h3>신제품 출시</h3>
+                <p>Computar Lens 신제품 출시<span>(Visible+SWIR 및 전동형원격 제어 Len...</span></p>
+            </div>
+        </div>
+        <div class="num"><span>01</span> / 03</div>
+    </section>
+
+    <section class="main_sec2">
+      <ul class="tab_menu">
+        <li id="tab1" class="on">
+            <h2 class="tab_btn"><span class="span1">제약사업</span></h2>
+                <div id="business" class="pharmaceutical" data-aos="fade-up">
+                    <p>건강한 사회를 만드는 풍성한 숲과 같은 기업 풍림무약은 우리 사회와 구성원들이 더욱 건강해질 수 있도록 우수한 의약품과 건강기능식품을<span> 개발, 공급하고 있습니다. 존재만으로 개인과 사회에 치유와 안정을 선사하는 울창한 숲처럼 풍림무약은 헬스케어 산업의 허브이자 흔들리지<span> 않는 버팀목이 되겠습니다.</span></span></p>
+                    <a href="#"><div class="view1">VIEW MORE</div></a>
+                    <ul class="img img1" data-aos="fade-up">
+                        <li>
+                            <a href="#">
+                                <img src="images/pharmaceutical_1.jpg" alt="1">
+                                <h3>CDMO사업</h3>
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/pharmaceutical_2.jpg" alt="2">
+                                <h3>천연물사업</h3>
+                            </a>
+                        </li>
+                        <li class="pc_img">
+                            <a href="#">
+                                <img src="images/pharmaceutical_3.jpg" alt="3">
+                                <h2>1</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/pharmaceutical_4.jpg" alt="4">
+                                <h3>완제의약품사업</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/pharmaceutical_5.jpg" alt="5">
+                                <h3>기능성 식품 사업</h3>
+                            </a>
+                        </li>
+                        <li class="pc_img">
+                            <div class="rnd">
+                                <div>R&D</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/pharmaceutical_6.jpg" alt="7">
+                                <h3>연구개발</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="blue_box">
+                                    <div class="blue">RICH WORLD<br> RITH RICHWOOD</div>
+                                </div>
+                                <h3>제약 브로슈어 다운로드</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </li>
+
+        <li id="tab2">
+          <h2 class="tab_btn"><span class="span2">무역사업</span></h2>
+            <div id="business" class="trade">
+                <p>1974년 설립된 풍림무약주식회사는 화장품 및 의약품, 식품 원료, 화상광학기기 등의 고부가가치 제품을 공급하며 기업과 기업,<span>기업과 세상을 연결하는 가교 역할을 수행하고 있습니다. 고객사의 성공을 지원하는 든든한 파트너로 우리 모두를 위한 내일을 열어 갑니다.</span></p>
+                <a href="#"><div class="view2">VIEW MORE</div></a>
+                <ul class="img img2">
+                    <li>
+                        <a href="#">
+                            <img src="images/trade_1.jpg" alt="1" >
+                            <h3>기능재료사업</h3>
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/trade_2.jpg" alt="2">
+                            <h3>뷰티사이언스사업</h3>
+                        </a>
+                    </li>
+                    <li class="pc_img">
+                        <div class="trading">
+                            <h3>TRADING</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/trade_3.jpg" alt="4">
+                            <h3>의약원료사업</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/trade_4.jpg" alt="4">
+                            <h3>식품원료사업</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/trade_5.jpg" alt="5">
+                            <h3>농산물원료사업</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/trade_6.jpg" alt="6">
+                            <h3>화상광학사업</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="red_box">
+                                <div class="red">RICH WORLD<br> RITH RICHWOOD</div>
+                            </div>
+                            <h3>무역 브로슈어 다운로드</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="main_sec3">
+        <h2 class="mobile_h2">풍림무약의<br>어떤 제품을<br>찾으시나요?</h2>
+        <h2 class="pc_h2">풍림무약의<br>어떤 제품을 찾으시나요?</h2>
+
+        <div class="search">
+            <div class="select_wrap">
+                <ul class="default_option">
+                    <li>전체</li>
+                </ul>
+                <ul class="select_ul">
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">무역제품</a></li>
+                    <li><a href="#">제약제품</a></li>
+                    <li><a href="#">기타</a></li>
+                </ul>
+            </div>
+
+            <div class="search2">
+                <div class="search2_1">
+                    <div class="search2_1_1">
+                        <label for="text"></label>
+                        <input type="text" name="text" id="text" placeholder="검색어를 입력하세요"><img src="images/search_b.png" alt="1" class="text_text">
+                    
+                    </div>
+                    <div class="search2_1_2">검색</div>
+                </div>
+               
+                <div class="search2_2">
+                    <ul>
+                        <li><a href="#" class="black_1">추천검색어</a></li>
+                        <li><a href="#">#SNOWTEX</a></li>
+                        <li><a href="#">#PHARMACOAT</a></li>
+                        <li><a href="#">#NIKKOL</a></li>
+                        <li><a href="#">#디오맥스정</a></li>
+                        <li><a href="#">#징코필정</a></li>
+                        <li><a href="#">#애엽</a></li>
+                        <li><a href="#">#CYCLODEXTRIN</a></li>
+                        <li><a href="#">#COMPUTAR</a></li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+    <section class="main_sec4_mobile">
+        <div class="news">
+            <h2>NEWS</h2><a href="#"><span>MORE</span></a>
+        </div>
+        <ul class="news_img">
+            <li>
+                <a href="#" class="box1">
+                    <div></div>
+                    <h3>[풍림무약] 가나안...</h3>
+                    <p>2022.02.15</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="box2">
+                    <div></div>
+                    <h3>[풍림무약] 2022년...</h3>
+                    <p>2022.01.20</p>
+                </a>
+            </li>
+        </ul>
+
+        <div class="sns">
+            <h2>SNS CHANNEL</h2>
+        
+            <a href="#">
+                <img src="images/mobile_sns.png" alt="sns">
+                <h3>[건강정보] 겨울철 비타민 파워<br>충전!!</h3>
+            </a>
+        </div>
+    </section>
+
+    <section class="sec4_pc">
+        <section class="sec44">
+            <section class="news"> 
+                <div>
+                    <h2>NEWS</h2><a href="#"><span>MORE</span></a>
+                </div>
+                <section class="news_box" data-aos="fade-up">
+                    <section class="news_1" >
+                        <a href="#">
+                            <div>
+                                <img src="images/sns1.png" alt="news1">
+                                <h3>[풍림무약] 가나안그로복지관에...</h3>
+                                <p>풍림무약은 성남시 소재<br>가나안근로복지관에 설 명정을 맞아...</p>
+                                <div>2022.02.15</div>
+                            </div>
+                        </a>
+                    </section>
+                    <section class="news_2" >
+                        <a href="#">
+                            <div>
+                                <img src="images/news1.png" alt="news2">
+                                <h3>[풍림무약] 2022년 청년친화강...</h3>
+                                <p>풍림무약이 고용노동부가 선정하는<br>'2022년 청년친화 강소기업'에...</p>
+                                <div>2022.01.20</div>
+                            </div>
+                        </a>
+                    </section>
+                </section>
+            </section>
+
+            <section class="sns">
+                <div class="sns_right">
+                    <div class="sns_box">
+                        <h2>SNS</h2>
+                    </div>
+                    <div class="sns_img" data-aos="fade-up">
+                        <a href="#">
+                            <div>
+                                <img src="images/mobile_sns.png" alt="sns1">
+                                <h2>[건강정보] 겨울철 비타민 파워<br>충전!!</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- kakao map -->
+        <div class="container">
+            <div id="kakao_map"></div>
+            <div class="info_box">주소: 경기도 수원시 팔달구 매산로<br>연락처: 031-412-1234</div>
+        </div>
+  </main>
+
+  <footer class="footer_mobile">
+      <div class="footer">
+          <div>RICHWOOD</div>
+          <a href="#" class="white">개인정보처리방침</a> <a href="#">이메일 무단수집거부</a>
+
+          <p>COPYRIGHT 2021. RICHWOOD TRADING COMPANY,LTD.<br> ALL RIGHTS RESERVED.</p>
+      </div>
+  </footer>
+
+  <footer class="footer_pc">
+    <section class="footer">
+        <h2>기업과 세상을 연결하는<br>풍림무약입니다</h2>
+        <div class="f_right">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">무역사업</a></li>
+                <li><a href="#">제약사업</a></li>
+                <li><a href="#">뉴스룸</a></li>
+                <li><a href="#">채용</a></li>
+                <li><a href="#">문의</a></li>
+            </ul>
+            <div class="rich"><a href="#">RICHWOOD</a></div>
+            <p><span>대표 이정석</span> <span>사업자등록번호 104-81-02314</span> <span>TEL <a href="#">02-778-2351</a></span></p>
+            <p><span>FAX 02-756-5402</span> <span>04527 서울시 중구 소월로 10 남대문로5가 단암빌딩 16층</span></p>
+
+            <a href="#" class="white">개인정보처리방침</a> <a href="#">이메일 무단수집거부</a>
+            <p>COPYRIGHT 2021. RICHWOOD TRADING COMPANY,LTD. ALL RIGHTS RESERVED.</p>
+        </div>
+    </section>
+    
+</footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out-cubic'
+        });
+    </script>
+    <script src="common/js/swiper-bundle.min.js"></script>
+    <!-- 내가 작업한 js -->
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=8dee9806f2b86c2efc765a6d4ef7cabc"></script>
+    <script src="common/js/main.js"></script>
+</body>
+</html>

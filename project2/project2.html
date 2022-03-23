@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>project 2</title>
+
+    <link rel="shortcut icon" href="../favicon/logo.ico">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto+Condensed:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://use.typekit.net/iqt2yij.css">
+    <link rel="stylesheet" href="../common/css/normalize.css">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="css/project2.css">
+</head>
+<body>
+    <header>
+        <section class="header_nav">
+            <a href="../index.html"><img src="images/project2_logo.png" alt="project2_logo"></a>
+            <div class="project" onclick="openNav()">PROJECT</div>
+            <div id="nav" class="project_list">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a>
+                <div class="content">
+                    <a href="../TeamProject/team_project.html">Team Project</a>
+                    <a href="../project1/project1.html" >Project 1</a>
+                    <a href="#" class="active">Project 2</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    
+    <main class="project2">
+        <section>
+            <!-- title -->
+            <div class="inner">
+                <div class="project_title">
+                    <img src="images/project2.svg" class="back_txt" data-300="top: 17vh" data-900="top: -100vh">
+                    <img src="images/project2.png" class="mockup_img" data-300="top: 25vh" data-800="top: -200vh">
+                </div>
+            </div>
+        </section>
+
+        <!-- research -->
+        <section class="research">
+            <div class="inner round_box">
+                <div class="project_info">
+                    <!-- title -->
+                    <div class="title">
+                        <h1 class="bold">풍림무약주식회사</h1>
+                        <span>Responsive Web Page Style Coding</span>
+                    </div>
+
+                    <section class="project_team">
+                        <div class="team_project">
+                            <h3 class="pro_title">Publising</h3>
+                            <ul>
+                                <li>Mobile</li>
+                                <li>412px</li>
+                                <li>PC</li>
+                                <li>1280px Chrome</li>
+                                <li>기여도</li>
+                                <li>개인작업 (100%)</li>
+                            </ul>
+                        </div>
+                        <div class="my_role">
+                            <h3>About</h3>
+                            <ul>
+                                <li>#웹접근성</li>
+                                <li>#웹표준</li>
+                                <li>#Media Queries</li>
+                            </ul>
+                            <ul>
+                                <li>#ResponsiveWeb</li>
+                                <li>#MobileFirst</li>
+                            </ul>
+                            <ul>
+                                <li>#Kakao Map API</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- goal -->
+                <div class="goal">
+                    <h2 class="main_title font">Goal</h2>
+                    <p>Video 삽입과 javascript를 이용한 동적인 페이지 구현</p>
+                </div>
+
+                <!-- problems & solutions -->
+                <div class="pro_sol">
+                    <div class="tit">
+                        <h2 class="main_title font">Problems<br> & Solution</h2>
+                    </div>
+                    <div class="pro_sol_content" data-aos="fade-up">
+                        <div class="inner_box">
+                            <h3>" Video 삽입 시 보안 문제 "</h3>
+                            <p>
+                                기존 사이트의 video를 사용하려 했으나, video 보안 문제로 인해 iframe으로 작업을 진행함.<br>
+                                iframe으로 작업 시 비율 제어 문제가 발생하여 유사한 video로 대체하여 video tag를 이용해 보안문제와 비율 제어 문제를 해결함.
+                            </p>
+                        </div>
+                        <div class="inner_box">
+                            <h3>" 제약사업, 무역사업 section "</h3>
+                            <p>
+                                제약사업, 무역사업 title 클릭 시, 각자의 레이아웃을 구현하는데 애를 먹음.<br>
+                                js에서 toggle을 이용해 문제 해결.
+                            </p>
+                        </div>
+                        <div class="inner_box">
+                            <h3>" 가변하는 반응형 원, 정사각형의 비율"</h3>
+                            <p>
+                                화면 크기에 따라 content의 비율(원, 정사각형)이 맞지 않음.<br>
+                                기존 div 태그에 부모 요소의 div 태그를 추가하여 position: relative 값을 준 다음, 부모 요소:before에 padding-top: 100%로 비율을 1:1로 만들어 가변 시 비율 유지 문제 해결.
+                            </p>
+                        </div>
+                        <div class="inner_box">
+                            <h3>" kakao map API 사용 미숙 "</h3>
+                            <p>
+                                javascript API 불러올 때, 로컬에서 지도 출력이 되지 않는 현상 발생.<br>
+                                script src=""에 http, https를 추가 작성하여 출력되지 않는 문제 해결. 로컬에서는 확인되지 않는 것을 알게됨.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="design">
+            <!-- design style guide -->
+            <div class="inner round_box">
+                <div class="design_box">
+                    <div class="tit">
+                        <h2 class="font">Style Guide</h2>
+                    </div>
+                    <div class="design_contents" data-aos="fade-up">
+                        <div class="inner_box keyword">
+                            <h3>keyword</h3>
+                            <ul>
+                                <li># 중요한</li>
+                                <li># 안정적인</li>
+                                <li># 편안한</li>
+                            </ul>
+                        </div>
+
+                        <div class="inner_box font">
+                            <h3>Font</h3>
+                            <ul>
+                                <li>
+                                    <p>Noto Sans KR<span>Bold</span></p>
+                                    <div class="abc bold">가나다 ABC</div>
+                                </li>
+                                <li>
+                                    <p>Noto Sans KR<span>Regular</span></p>
+                                    <div class="abc">가나다 ABC</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="inner_box color">
+                            <h3>Color</h3>
+                            <ul>
+                                <li>
+                                    <p>#D60000</p>
+                                    <div class="color1 color5"></div>
+                                </li>
+                                <li>
+                                    <p>#2D5FFF</p>
+                                    <div class="color2 color5"></div>
+                                </li>
+                                <li>
+                                    <p>#F000000</p>
+                                    <div class="color3 color5"></div>
+                                </li>
+                                <li>
+                                    <p>#DDDDDD</p>
+                                    <div class="color4 color5"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="preview">
+            <!-- preview -->
+            <div class="inner">
+                <div class="tit">
+                    <h2 class="font">Preview</h2>
+                </div>
+
+                <div class="device">
+                    <img src="images/project2_pc.png" alt="pc" class="pc_size">
+                    <div class="mobile_size">
+                        <img src="images/project2_mobile.png" alt="mobile">
+                    </div>
+                </div>
+
+                <div class="link">
+                    <a href="project_2/index.html" class="site font">VIEW SITE
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="review">
+            <!-- review -->
+            <div class="inner round_box">
+                <div class="review_box">
+                    <h2 class="font">review</h2>
+                    <ul>
+                        <li>
+                            <h3 class="good"># 강점</h3>
+                            <p>
+                                HTML5, CSS3 작업 시 적절한 태그와 속성을 사용해가며 어려움이 줄고 작업 속도가 빨라진 것을 체감했다.<br>
+                                구조 작성이 어느정도 익숙해지니 자연스레 다양한 기능을 추가하고 싶은 욕심이 생겼고, 여러가지 기술을 시도하며 자신감도 얻게 되었다.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="bad"># 약점</h3>
+                            <p>
+                                Media Queries를 이용하여 반응형 웹 페이지 구현을 위해 pc와 mobile.css 두개를 만들어 작업하였다.<br>
+                                Media Queris 작업에 적합한 HTML 구조 작성과 id, class값 지정에 미숙하여 HTML구조를 pc, mobile 따로 만들어 작업의 효율성이 떨어진 점이 아쉬워 이 부분은 연습이 더 필요 할 것 같다.
+                            </p>
+                        </li>
+                        <li>
+                            <h3># 총평</h3>
+                            <p>
+                                javascript를 배우고 처음 적용시켜보며 많은 오류와 시행착오를 겪을때마다 차근차근 구조와 과정을 이해하려고 노력했다.<br>
+                                만족스러운 결과물을 만들기엔 아직 부족하고, 작업을 하며 보완해야할 문제점들을 파악하는 단계라고 생각하며 부족한 부분이 많이 보이지만 끈기를 갖고 계속 고민하고 수정하며 완성했다는 점에 의의를 두고싶다.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out-cubic'
+        });
+    </script>
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="../common/js/jquery-3.6.0.min.js"></script>
+    <script src="../common/js/main.js"></script>
+    <script src="js/project2.js"></script>
+    
+    <script type="text/javascript" src="../common/js/skrollr.min.js"></script>
+    <script type="text/javascript">
+        skrollr.init({
+            mobileCheck: function() {
+                if ((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+                    // mobile device
+                }
+            }
+        });
+    </script>
+</body>
+</html>

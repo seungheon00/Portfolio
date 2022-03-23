@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>portfolio_최승헌</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon/logo.ico">
+
+    <!-- OG(오픈그라피) -->
+    <meta property="og:title" content="최승헌의 Portfolio">
+    <meta property="og:description" content="최승헌의 Portfolio 페이지 입니다!">
+    <meta property="og:image" content="http://images/opengraph.png">
+    <meta property="og:url" content="https://seungheon00.github.io/portfolio/">
+    <meta property="type" content="website">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto+Condensed:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://use.typekit.net/iqt2yij.css">
+    <link rel="stylesheet" href="common/css/normalize.css">
+    <link rel="stylesheet" href="common/css/main.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="gnb">
+            <section class="header_top" data-500="background:transparent" data-700="background:#fff">
+                <div class="logo"></div>
+                <ul class="header_menu">
+                    <li><a href="#work" class="font">Work</a></li>
+                    <li><a href="#about" class="font">Skill</a></li>
+                    <li><a href="#contact" class="font">Contact</a></li>
+                </ul>
+            </section>
+        </header>
+
+        <main>
+            <div class="gradient_bg" data-0="background-image:linear-gradient(45deg, rgb(244,220,159), rgb(196,216,168), rgb(161,216,196));" data-700="background-image:linear-gradient(0deg, rgb(255,255,255), rgb(255,255,255), rgb(255,255,255));">
+            </div>
+            <section class="main_visual">
+                <div class="inner">
+                    <div class="visual_txt font">
+                        <h2>I am a</h2>
+                        <h2>PUBLISHER with</h2>
+                        <div class="txt_wrap active">
+                            <h2>Positive Energy</h2>
+                        </div>
+                        <div class="txt_wrap">
+                            <h2>Responsibility</h2>
+                        </div>
+                        <div class="txt_wrap">
+                            <h2>Delicate</h2>
+                        </div>
+                        <div class="txt_wrap">
+                            <h2>Staying Power</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main_intro">
+                <div class="inner">
+                    <div class="intro_txt">
+                        <div class="txt_left">
+                            <p>한계없이</p>
+                            <p>도전하는</p>
+                            <p class="designer" data-500="color: rgb(161,216,196)" data-1000="color: rgb(240, 206, 32)">퍼블리셔</p>
+                        </div>
+                        <div class="txt_right">
+                            <h2 class="font">Expansion,</h2>
+                            <p>확장은 삶의 기반입니다. 좋은 경험의 확장을 통해 개인을 성장시키고 더욱 높은 성과를 내기 위해 꾸준히 노력합니다. 실패를 통해 배우고 성공을 통해 긍정적인 영향을 확장시키는 사람이 되도록 노력하겠습니다.</p>
+                            <!--
+                            <ul>
+                                <li data-500="background: rgb(161,216,196);" data-900="background: rgb(244,220,159);">#열정</li>
+                                <li data-600="background: rgb(161,216,196);" data-1000="background: rgb(244,220,159);">#자신감</li>
+                                <li data-700="background: rgb(161,216,196);" data-1100="background: rgb(244,220,159);">#잠재력</li>
+                            </ul>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main_work" id="work">
+                <div class="inner">
+                    <div class="inner_box">
+                        <h1 class="main_title work font" >Work.</h1>
+                        <button id="open">Publising Guide</button>
+
+                        <div class="modal_wrapper" style="display: none;">
+                            <div class="modal_box">
+                                <div class="guide_1">
+                                    <h2>Open Graph</h2>
+                                    <ul>
+                                        <li>오픈그래피 적용 meta property="og"</li>
+                                    </ul>
+                                </div>
+                                <div class="guide_2">
+                                    <h2>Favicon</h2>
+                                    <ul>
+                                        <li>5개의 이미지와 1개의 JSON 파일로 파비콘 최적화</li>
+                                        <li>ico 32x32 : 예전 브라우저들</li>
+                                        <li>svg : 대부분 최신 브라우저들, 다크모드 지원</li>
+                                        <li>apple-touch-icon 180x180 : 애플기기</li>
+                                        <li>manifest(JSON) : PWA 및 안드로이드 기기</li>
+                                        <li>192x192 : 홈스크린</li>
+                                        <li>512x512 : PWA 로딩시 스플래시 스크린용</li>
+                                    </ul>
+                                </div>
+                                <div class="guide_3">
+                                    <h2>CSS3</h2>
+                                    <ul>
+                                        <li>nomalize.css : HTML 요소의 기본 스타일을 브라우저 간 일관성을 유지</li>
+                                        <li>내가 작성한 css는 마지막으로 작성</li>
+                                        <li>@charset "UTF-8"; 을 작성하여 인코딩 선언 </li>
+                                        <li>모든 문서에 css는 외부문서로 연결</li>
+                                        <li>CSS Validator 검사를 통해 Error 없이 작성 (W3C의 Markup Validation Service)</li>
+                                        <li>모든 속성 선언 마무리는 세미콜론(;)을 작성</li>
+                                    </ul>
+                                </div>
+                                <div class="guide_4">
+                                    <h2>HTML5</h2>
+                                    <ul>
+                                        <li>HTML5 Validator 검사를 통해 Error 없이 작성 (W3C의 Markup Validation Service)</li>
+                                        <li>코드의 가독성을 높이기 위해 자식, 자손 요소는 두 칸씩 들여쓰기</li>
+                                        <li>외부링크는 a태그를 사용하며, 빈 링크의 href 값은 #으로 작성</li>
+                                        <li>img 태그 사용시 alt값 필수 작성</li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="guide_5">
+                                    <h2>파일명 및 폴더구조</h2>
+                                    <ul>
+                                        <li>웹 페이지의 첫 페이지는 index.html로 통일</li>
+                                        <li>알파벳, 숫자, 언더바(_)를 조합하여 파일명 부여</li>
+                                        <li>index.html을 기준으로 common, images 폴더 위치(최상위 폴더)</li>
+                                        <li>각 project 폴더 안에 같은 구조의 폴더트리 작성</li>
+                                    </ul>
+                                </div>
+                                <div class="close_wrapper">
+                                    <button id="close">닫기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                        <!--
+                        <div class="guide_gnb">
+                            <div class="guide_1">
+                                <h2>Open Graph</h2>
+                                <ul>
+                                    <li>오픈그래피 적용 meta property="og"</li>
+                                </ul>
+                            </div>
+                            <div class="guide_2">
+                                <h2>Favicon</h2>
+                                <ul>
+                                    <li>5개의 이미지와 1개의 JSON 파일로 파비콘 최적화</li>
+                                    <li>ico 32x32 : 예전 브라우저들</li>
+                                    <li>svg : 대부분 최신 브라우저들, 다크모드 지원</li>
+                                    <li>apple-touch-icon 180x180 : 애플기기</li>
+                                    <li>manifest(JSON) : PWA 및 안드로이드 기기</li>
+                                    <li>192x192 : 홈스크린</li>
+                                    <li>512x512 : PWA 로딩시 스플래시 스크린용</li>
+                                </ul>
+                            </div>
+                            <div class="guide_3">
+                                <h2>CSS3</h2>
+                                <ul>
+                                    <li>nomalize.css : HTML 요소의 기본 스타일을 브라우저 간 일관성을 유지</li>
+                                    <li>내가 작성한 css는 마지막으로 작성</li>
+                                    <li>@charset "UTF-8"; 을 작성하여 인코딩 선언 </li>
+                                    <li>모든 문서에 css는 외부문서로 연결</li>
+                                    <li>CSS Validator를 통과해야한다. (W3C의 Markup Validation Service)</li>
+                                </ul>
+                            </div>
+                            <div class="guide_4">
+                                <h2>Font</h2>
+                                <ul>
+                                    <li>구글 폰트 링크 사용하여 적용</li>
+                                    <li>폰트가 없는 경우 font.css로 직접 연결하여 적용</li>
+                                </ul>
+                            </div>
+                            <div class="guide_5">
+                                <h2>HTML5</h2>
+                                <ul>
+                                    <li>HTML5 Validator를 통과해야한다. (W3C의 Markup Validation Service)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        -->
+
+
+                    </div>
+                    <div class="project project3">
+                        <a href="project2/project2.html">
+                            <div class="mockup">
+                                <h1 class="font">Project2</h1>
+                                <img src="images/project2.png" alt="project2">
+                            </div>
+                            <div class="title">
+                                <div class="txt_left">
+                                    <h2>풍림무약주식회사</h2>
+                                </div>
+                                <div class="txt_right">
+                                    <p>Responsive web page style coding</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="project project2">
+                        <a href="project1/project1.html">
+                            <div class="mockup">
+                                <h1 class="font">Project1</h1>
+                                <img src="images/project1.png" alt="project1">
+                            </div>
+                            <div class="title">
+                                <div class="txt_left">
+                                    <h2>은산해운항공(주)</h2>
+                                </div>
+                                <div class="txt_right">
+                                    <p>Web Page Redesign</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                  
+                    <div class="project project1">
+                        <a href="TeamProject/team_project.html">
+                            <div class="mockup">
+                                <h1 class="font">Team Project</h1>
+                                <img src="images/project0.png" alt="team_project">
+                            </div>
+                            <div class="title">
+                                <div class="txt_left">
+                                    <h2>약학정보원</h2>
+                                </div>
+                                <div class="txt_right">
+                                    <p>Application UX / UI Redesign & Develop</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main_possible" id="about">
+                <div class="inner">
+                    <h1 class="main_title skill font">Skill.</h1>
+                    <div class="possible_box">
+             
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"     aria-controls="collapseOne">
+                                    HTML5 & CSS3
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <ul class="accordion-body">
+                                        <li>웹 사이트 구축 및 디자인</li>
+                                        <li>웹표준 & 웹접근성을 고려하여 시맨틱 태그 적극 활용</li>
+                                        <li>flex, grid, position 사용</li>
+                                        <li>스타일 적용, 애니메이션 구현</li>
+                                        <li>미디어쿼리 이용 반응형 웹 제작</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"      aria-expanded="false" aria-controls="collapseTwo">
+                                    Javascript(ES6) & React
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>웹 사이트 구현</li>
+                                            <li>jQuery 라이브러리 사용 가능</li>
+                                            <li>이벤트 메소드 구현</li>
+                                            <li>Ajax, JSON</li>
+                                            <li>OpenAPI 사용 가능</li>
+                                            <li>React 공부중</li>
+                                        </ul>    
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"    aria-expanded="false" aria-controls="collapseThree">
+                                    Photoshop&Illustrator
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <ul class="accordion-body">
+                                        <li>이미지 편집 & 디자인</li>
+                                        <li>UX&UI를 고려한 디자인 가능</li>
+                                    </ul>
+                              </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"    aria-expanded="false" aria-controls="collapseFour">
+                                    XD & Zeplin
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <ul class="accordion-body">
+                                        <li>프로토타입 제작</li>
+                                        <li>앱 스플래시 화면 디자인</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"    aria-expanded="false" aria-controls="collapseFive">
+                                    Git & Github
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <ul class="accordion-body">
+                                        <li>git bash 혹은 VScode 사용</li>
+                                        <li>프로젝트 버전관리</li>
+                                        <li>github, netlify 를 이용한 배포</li>
+                                    </ul>
+                                </div>
+                            </div>
+                          </div>
+                    <img src="images/clapping.png" alt="clapping img">
+                </div>
+            </section>
+        </main>
+
+
+        <footer id="contact">
+            <section>
+                <div class="inner">
+                    <h1 class="main_title contact font">CONTACT ME.</h1>
+                    <h2 class="introduce">
+                        새로운 도전을 시작합니다!<br>
+                        <br>
+                        처음으로 자의적인 목표를 설정한 것이 결코 늦었다고
+                        생각하지 않고 용기를 내어 실천으로 옮겼습니다.<br>
+                        <br>
+                        한계없이 도전하는 "퍼블리셔" 최승헌입니다.
+                    </h2>
+                    <h2 class="mail">tmdgjs0902@naver.com</h2>
+                    <p>&copy; 2022 SeungHeon CHOI. all rights reserved.</p>
+                </div>
+            </section>
+        </footer>
+
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out-cubic'
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="common/js/prefixfree.min.js"></script>
+    <script src="common/js/jquery-3.6.0.min.js"></script>
+    <script src="common/js/main.js"></script>
+    <script type="text/javascript" src="common/js/skrollr.min.js"></script>
+    <script type="text/javascript">
+        skrollr.init({
+            mobileCheck: function() {
+                if ((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+                    // mobile device
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
